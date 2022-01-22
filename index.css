@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+.sa.show {
+    opacity: 1;
+    transform: none;
+}
+.sa--up {
+    transform: translate(0, 100px);
+}
+.big-text{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 6vw;
+}
+.text{
+    font-size: 4vw;
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+
+}

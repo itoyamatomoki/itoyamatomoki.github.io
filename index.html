@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>ともきぺーじ</title>
+</head>
+<body style="background-color: #90d8f7;">
+<div>
+    <div class="container sa sa--up">
+        <div style="padding-top: 10%" class="big-text"><b>ともきぺーじ</b></div>
+        <p style="padding-top: 10%" class="text">富士中学生です。</p>
+        <p class="text">2-8(4)です。いとやまともきです。</p>
+        <p class="text">最近ギター始めました</p>
+        <p class="text">ピアノとかも先っちょだけかじってます</p>
+        <p class="text">誕生日は12/24です。</p>
+        <p class="text">好きな食べ物はラーメンです。</p>
+        <p class="text">ずとまよ好きです。</p>
+    </div>
+</div>
+</body>
+<script>
+    let scrollAnimationElm = document.querySelectorAll('.sa');
+    let scrollAnimationFunc = function () {
+        for (let i = 0; i < scrollAnimationElm.length; i++) {
+            if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + 20) {
+                scrollAnimationElm[i].classList.add('show');
+            }else if (window.innerHeight < scrollAnimationElm[i].getBoundingClientRect().top - 20){
+                scrollAnimationElm[i].classList.remove('show');
+            }
+        }
+    };
+    window.addEventListener('load', scrollAnimationFunc);
+    window.addEventListener('scroll', scrollAnimationFunc);
+</script>
+</html>
